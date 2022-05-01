@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring view manipulation</title>
+</head>
+<body>
+    <div th:fragment="top">
+        <p>Top fragment</p>
+    </div>
+    <div th:fragment="main">
+        <span th:text="'Main, ' + ${message}"></span>
+    </div>
+    <div th:fragment="bottom">
+        <p>Bottom fragment</p>
+    </div>
+</body>
+</html>
